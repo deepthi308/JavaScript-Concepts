@@ -11,5 +11,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: azure;
+    background-color: rgb(29, 0, 75);
+    font-size: 4rem;
+    font-weight: 600;
+    color:white;
 }
