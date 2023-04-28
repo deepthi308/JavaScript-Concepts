@@ -1,0 +1,30 @@
+// Question 1:
+/*
+Mark and john are trying to  compare their BMI, which is calculated using the formula:BMI=mass/height**2=mass/(height*height). mass in kg and height in meter.
+*/
+
+// Store mark's and johns mass and height in variables
+// Calculate the BMI's using using the formula given
+// Create a boolean variable "markHigherBMI" containing the information about whther mark has heigher BMI than john
+
+// Test Data 1: Mark weight is 78kg and he is 1.69m tall.
+// john weights 92kg and is 1.95m tall.
+// Test Data 2: Mark weights 95kg and he is 1.88m tall.
+// john weights 85kg and 1.76m tall.
+
+//------------------------------------------------------
+
+// Question 2:
+/*
+Use the BMI example from challenge #1, and the code you already wrote and improve it.
+
+1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "Jhon's BMI is higher than Mark's!
+
+2. Use a template string to include the BMI values is the outputs. Example: "Mark's BMI(28.3) is higher than john's (23.9)!"
+
+HINT: Use an if/else statement 😉.
+
+Good Luck Myself 🤗
+*/
+
+//-------------------------------------------------------
