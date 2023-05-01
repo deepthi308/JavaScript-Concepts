@@ -1,0 +1,49 @@
+// Don't be this person - Mistakes 😐
+// Didn't have clear goal
+// Watch courses and copy code without caring how it actually works
+// He didnn't reinforce what he was learning by doing small changes or taking notes
+// He didn't practice and didn't came up with his own project ideas
+// Quicky became frustrated whene his code is not clean or efficient
+// Lost motivation thinking that he could never know everything
+// Learning  in isolation
+// After finishing a couple of courses. He thought he now was a web developer and start applying to jobs
+// But he couldn't even build an app on his own
+
+// How to rectify this mistake 😎
+// Set a specific, measurable, realistic and time-based goal
+// Know exactly why you are learning to code: Switching careers? Finding a better job?
+// Imagine a big project you want to be able to build!
+// Research technologies you need and then learn them
+
+// Understand the code that you are studying and typing
+// Always type the code, don't copy paste
+// Don't move on if you don't Understand
+
+// After you learn a new concept or a new feature, use it immediately
+// Take notes
+// Challenge yourself and practice with small coding exercises and Challenges
+// Don't be in a hurry to complete the course fast
+
+// Practicing on your own is the most important thing to do
+// Come up with your own ideas or popular sites or applictions or just parts of them in the beginning
+// Don't be stuck in the tutorial hell
+
+// Don't get stuck trying to write the perfect code
+// Just write tons of code, no matter the quality!
+// Clean and efficient code will come with time
+// You can always refractor the code later
+
+// Embrace the fact that will never know everything
+// Just focus on what you need to achieve the goal
+
+// Explain new concepts to other people. If you can explain it, you truly understand it.
+// Share your goals to make yourself accountable
+// Share yours learning process
+
+// Courses are an amazing starting point, but are only the beginning of your journey!
+
+// Problem solving
+// 100% understand the problem and ask questions to yourself to get clear understanding
+// Divide and Conquer: Break a big problem into smaller sub-problems
+// Don't be afraid to do as much research as you have to
+// For bigger problems write pseudo-code before writing actual code
