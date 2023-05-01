@@ -26,12 +26,12 @@ const calcAverage = (totals) => {
 
 for (let i = 0; i < bills.length; i++){
     tips.push(calcTip(bills[i]));
-}
-
-for (let i = 0; i < tips.length; i++){
     totals.push(bills[i] + tips[i]);
 }
 
 const average = calcAverage(totals);
+console.log('Bills: ', bills);
+console.log('Tips: ', tips);
+console.log('Totals: ', totals);
 console.log(`The average is ${average} 💰`);
 
