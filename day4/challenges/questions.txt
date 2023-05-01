@@ -1,0 +1,6 @@
+// Question 1:
+
+/*
+Copy the question from part-6 video of the  complete javascript course 2023.
+Time stamp: 59:00 🤠
+*/
