@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --bg-dark:#130f40;
+    --white:#a4b0be;
+    --black:#1e272e;
+    --green:#4cd137;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+
+body{
+    height:100vh;
+    width:100vw;
+    background-color: var(--bg-dark);
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding:2rem;
+}
+
+.nav{
+    flex: 0.1;
+    width:100%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    color:black;
+}
+
+.note{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.middle{
+    flex:0.4;
+    color:var(--bg-dark);
+    background-color: var(--white);
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    border-radius: 1rem;
+}
+
+.bottom{
+    flex: 0.5;
+    background-color: var(--white);
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem;
+    gap:1rem;
+    border-radius: 1rem;
+}
+
+.left{
+    flex:0.5;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-dark);
+    width:100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    gap:2.5rem;
+    border-radius: 1rem;
+    padding:3rem;
+}
+
+.right{
+    flex: 0.5;
+    background-color: var(--bg-dark);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
+    justify-content: center;
+    padding:2rem;
+    gap:1rem;
+    border-radius: 1rem;
+}
+
+.up{
+    flex:0.5;
+    color:white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.down{
+    color:white;
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding:0rem 5rem; */
+    gap:1rem;
+    border-radius: 1rem;
+}
+
+button{
+    padding:1rem 1.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--black);
+    color:white;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: inset 0px 0px 4px var(--bg-dark);
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--green);
+    color:var(--bg-dark);
+}
+
+.result{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.score,.high-score{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.user-num{
+    width:66%;
+    border: none;
+    outline: none;
+    height:4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 0.6rem;
+}
+
+.tip{
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.up{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.user-num:focus{
+    border: 0.15rem solid var(--bg-dark);
+}
+
+.crt-num{
+    font-size: 4rem;
+    background-color: var(--white);
+    
+}
+
+@media (min-width:0px) and (max-width:750px){
+    body{
+        padding:0.6rem;
+    }
+    .bottom{
+        flex-direction: column;
+        flex: 0.7rem;
+    }
+    .nav{
+        flex: 0.1;
+    }
+    .middle{
+        flex:0.2;
+        gap:0.2rem;
+    }
+   .left{
+    gap:1rem;
+   }
+    .user-num{
+        width: 66%; 
+        border: none;
+        outline: none;
+        height: 3rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        border-radius: 0.6rem;
+    }
+    .title{
+        font-size: 2rem
+    }
+    .crt-num{
+        font-size: 2rem;
+    }
+    .right{
+        flex: 0.7;
+    }
+}
+
+@media (min-width:0px) and (max-width:500px){
+    .title{
+        font-size: 1.6rem;
+    }
+    .crt-num{
+        font-size: 1.6rem;
+    }
+    .left{
+        flex:0.2;
+    }
+    .right{
+        flex: 0.8;
+    }
+}
+
+@media (min-width:0px) and (max-width:450px){
+    .title{
+        font-size: 1.2rem;
+    }
+    body{
+        gap:1rem;
+    }
+    button{
+        padding:0.5rem;
+    }
+    .nav{
+        flex: 0.1;
+        padding:1rem;
+    }
+    .middle{
+        flex:0.2;
+    }
+    .bottom{
+        flex: 0.7;
+        padding:1rem;
+    }
+    .left{
+        flex: 0.2;
+    }
+    .right{
+        flex:0.8;
+    }
+    .note{
+        display: none;
+    }
+    .result,.score,.high-score{
+        font-size: 1.2rem;
+    }
+}

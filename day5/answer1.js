@@ -53,8 +53,9 @@ const thermometer = function (temperatures) {
     return tempAmplitude;
 }
 
-const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
-const temperatureAmplitude = thermometer(temperatures);
+const temperatures1 = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+const temperatures2 = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+const temperatureAmplitude = thermometer([...temperatures1,...temperatures2]);
 console.log(`Temperature Amplitude: ${temperatureAmplitude}`);
 
 // Problem 2:
@@ -65,6 +66,7 @@ Should we implement the same functionality with two arrays? No, Just merge the t
 
 2. Break the problem into sub problems:
 Merge two arrays
+//const temperatureAmplitude = thermometer([...temperatures1,...temperatures2]);
 */
 
 
