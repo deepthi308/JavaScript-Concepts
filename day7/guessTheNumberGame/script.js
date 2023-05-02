@@ -11,8 +11,8 @@ const result = document.querySelector('.result');
 const body = document.getElementsByTagName('body');
 
 let correctNumber = Math.ceil(Math.random() * 20);
-const scores = [];
-    let scoree = 0;
+const scores = [0];
+    let scoree = 20;
     let high = 0;
 function checkHighScore(scores) {
     return Math.max(...scores);
@@ -43,11 +43,17 @@ const checkSimilarity = (correctNumber, userNumber) => {
         const hint = giveTip(correctNumber,userNumber);
         tip.innerText = hint;
         result.innerText = 'Wrong Number 🚴‍♀️';
+        if (scoree >= 1) {
         scoree = scoree - 1
         score.innerText = scoree;
         scores.push(scoree);
+        } else {
+            result.innerText = 'You Lost 😏';
+            tip.innerText = ''
+            userInput.value = ''
+        }
         high = checkHighScore(scores);
-        highScore.innerText = high;
+        highScore.innerText = high;   
     }
     console.log(score.innerText)
 }
@@ -70,7 +76,7 @@ const handlePlayAgain = () => {
     correctNumber = Math.ceil(Math.random() * 20);
     crtNum.innerText = '?';
     userInput.value = '';
-    score.innerText = '';
+    score.innerText = 0;
     highScore.innerText = checkHighScore(scores);
     tip.innerText = '';
     result.innerText = 'Result';

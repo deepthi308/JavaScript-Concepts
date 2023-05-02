@@ -1,0 +1,6 @@
+DOM:
+Structured representation of html elements
+Allows javascript to access the html elements and styles to manipulate them.
+So, we can say that DOM is a connection point between the html document and the javascript code.
+The DOM is automatically created by the browser as soon as the html code loads and it is stored in a tree like structure.
+In this tree, each html element is an object.
