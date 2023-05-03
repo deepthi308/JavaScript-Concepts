@@ -93,3 +93,5 @@ againBtn.addEventListener('click', handlePlayAgain)
 // console.log(score.innerText);
 // console.log(body);
 // console.log(body[0].style.backgroundColor);
+
+// Refractoring is the process which is done to eliminate  the repeataion of the same code inorder to improve the original code
