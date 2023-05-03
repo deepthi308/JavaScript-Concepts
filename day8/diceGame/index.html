@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dice Game</title>
+</head>
+<body>
+    <main class="game-container">
+        <div class="left">
+            <section class="score">
+                <h1 class="player1">Player 1</h1>
+                <h1 class="result1">0</h1>
+            </section>
+            <section class="dice-box">
+                <h3 class="current">
+                Current
+                </h3>
+                <h2 class="dice-num-1">
+                0
+                </h2>
+            </section>
+        </div>
+        <div class="right">
+            <section class="score">
+                <h1 class="player2">Player 2</h1>
+                <h1 class="result2">0</h1>
+            </section>
+            <section class="dice-box">
+            <h3 class="current">
+            Current
+            </h3>
+            <h2 class="dice-num-2">
+            0
+            </h2>
+            </section>
+        </div>
+        <div class="center">
+            <div class="top">
+                <button class="new-game">
+                New Game
+                </button>
+            </div>
+            <div class="middle">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="bottom">
+                <button class="roll-dice">
+                    Roll Dice
+                </button>
+                <button class="hold">
+                    Hold
+                </button>
+            </div>
+        </div>
+    </main>
+
+<div class="win-modal">
+   <div class="actual-modal">
+    <div class="mela">
+        <h2><span class="winner">Player1</span> won the game 🎉.</br>Wanna play again?</h2>
+    </div>
+    <div class="keela">
+        <button class="new-game">
+            Play Again
+        </button>
+        <button class="quit">Quit</button>
+    </div>
+   </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
