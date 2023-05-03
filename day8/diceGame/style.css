@@ -142,6 +142,7 @@ body{
     box-shadow: 0px 0px 1px black;
     box-shadow: inset   0px 0px 2px black;
     cursor: pointer;
+    margin-top:-5rem;
 }
 
 .hidden{
@@ -224,9 +225,20 @@ button.roll-dice{
 }
 
 @media (min-width:0px) and (max-width:500px) {
-    button  .roll-dice {
-        visibility: hidden;
-    }
+   button{
+    font-size: 0.5rem;
+    padding: 0.4rem 0.4rem;
+   }
+
+   .middle{
+    height: 2rem;
+    width:2rem;
+   }
+
+   .hold{
+    font-size: 0.5rem;
+    padding:0.4rem  0.4rem;
+   }
 }
 
 @media  (min-width:0px) and (max-width:600px){
@@ -236,6 +248,18 @@ button.roll-dice{
         width: 100%;
         height: 100%;
         padding: 0rem;
+    }
+
+    .result1,.result2,.dice-num-1,.dice-num-2{
+        font-size: 2rem;
+    }
+
+    .player1,.player2,.current{
+        font-size: 1rem;
+    }
+
+    .middle{
+        margin-top: 0rem;
     }
     
     .body{
