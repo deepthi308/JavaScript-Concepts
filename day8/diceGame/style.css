@@ -219,6 +219,16 @@ button:hover{
     box-shadow: inset 0px 0px 4px  purple;
 }
 
+button.roll-dice{
+    visibility: visible;
+}
+
+@media (min-width:0px) and (max-width:500px) {
+    button  .roll-dice {
+        visibility: hidden;
+    }
+}
+
 @media  (min-width:0px) and (max-width:600px){
     .game-container{
         flex-direction: column;
@@ -286,3 +296,4 @@ button:hover{
         }
        
 }
+
