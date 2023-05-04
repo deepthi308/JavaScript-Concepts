@@ -10,12 +10,14 @@ const result2 = document.querySelector('.result2');
 const modal = document.querySelector('.win-modal');
 const win = document.querySelector('.winner');
 const quit = document.querySelector('.quit');
+const left = document.querySelector('.left');
+const right = document.querySelector('.right');
 
 let count = 1;
 let player1Score = 0;
 let player2Score = 0;
 let winner;
-
+left.classList.add('active');
 // Creating functionalities
 function handleDiceRoll() {
     // debugger;
@@ -29,18 +31,36 @@ function handleDiceRoll() {
     // debugger;
    
     if (randomNumber > 1 && count === 1) {
+        if (right.classList.contains('active')) {
+            right.classList.remove('active');
+            left.classList.add('active');
+        }
             current1.innerText = Number(current1.innerText) + randomNumber;
     }
     else if(randomNumber > 1 && count === 2) {
             current2.innerText = Number(current2.innerText) + randomNumber;
+            if (left.classList.contains('active')) {
+        left.classList.remove('active');
+        right.classList.add('active'); 
+        }
     }
     if (randomNumber === 1 && count === 2){
         current2.innerText = 0;
         count=1;
+        if (right.classList.contains('active')) {
+            right.classList.remove('active');
+            left.classList.add('active');
+        }
+        
     }
      else if (randomNumber === 1 && count === 1) {
         current1.innerText = 0;
         count = 2;
+        if (left.classList.contains('active')) {
+        left.classList.remove('active');
+        right.classList.add('active'); 
+        }
+        
     }
     
     const hiddenDots = 6 - randomNumber;
