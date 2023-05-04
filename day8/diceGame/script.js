@@ -18,36 +18,41 @@ let winner;
 
 // Creating functionalities
 function handleDiceRoll() {
-
+    // debugger;
+// count = 1;
     dots.forEach((dot) => {
         if (dot.classList.contains('hidden')) {
             dot.classList.remove('hidden');
         }
     })
-    const randomNumber = Math.ceil(Math.random() * 6);
-    if (randomNumber === 1 && count%2 !== 0) {
-        current1.innerText = 0;
+    const randomNumber = Math.ceil(Math.random()*6);
+    // debugger;
+   
+    if (randomNumber > 1 && count === 1) {
+            current1.innerText = Number(current1.innerText) + randomNumber;
     }
-    if (randomNumber === 1 && count%2 === 0){
+    else if(randomNumber > 1 && count === 2) {
+            current2.innerText = Number(current2.innerText) + randomNumber;
+    }
+    if (randomNumber === 1 && count === 2){
         current2.innerText = 0;
+        count=1;
     }
-    if (randomNumber > 1) {
-        if (count % 2 !== 0) {
-        current1.innerText = Number(current1.innerText)+randomNumber;
-    } else {
-        current2.innerText = Number(current2.innerText)+randomNumber;;
+     else if (randomNumber === 1 && count === 1) {
+        current1.innerText = 0;
+        count = 2;
     }
-    }
+    
     const hiddenDots = 6 - randomNumber;
     for (let i = 1; i <= hiddenDots; i++){
         dots[i].classList.add('hidden');
     }
-    count++;
-    console.log(hiddenDots, randomNumber);
+    // count++;
+    console.log(count);
 }
 
 const handleHold = function () {
-    if (count % 2 === 0) {
+    if (count === 1) {
         player1Score = Number(result1.innerText);
         player1Score = Number(current1.innerText) + player1Score;
         result1.innerText = player1Score;
@@ -59,7 +64,7 @@ const handleHold = function () {
         }
         
     }
-    if (count % 2 !== 0) {
+    if (count  === 2) {
         player2Score = Number(result2.innerText);
         player2Score = Number(current2.innerText) + player2Score;
         result2.innerText = player2Score;
