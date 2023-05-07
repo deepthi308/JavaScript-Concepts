@@ -1,0 +1,59 @@
+Javascript: High level, object oriented, multi-paradigm, programming language
+
+Javascript: High-level, prototype-based object oriented, multi-paradigm, interpreted or just-in-time compiled, dynamic, single-threaded, garbage-collected programming language with first class functions and a non-blocking event loop concurrency model.
+
+Highlevel language --> It is programmer friendly as it is easy to understand. The syntax will be simple. Debugging will be easy. 
+
+Garbage Collected --> We don't have to manage the memory, javascript have an algoirthm called garbage collector which will remove all the unused objects in the heap memory.  But since we don't have access to the memory directly it will not be as fast as c and c++ where we have to manually manage the memory.
+
+prototype-based object  oriented --> Here we can create a blueprint of the object before creating the  actual object. We can add functions to the prototype using 'push' function. When we create an object for the prototype we can access those methods using the object.
+
+Interpreted or Just-In-Time compiled --> Old javascript engine can only able to interpret the code line by line and directly execute it without putting the interpreted code in a seperate binary file and then execute it. But modern javascript have just in time compiler which compiles the source code into machine code directly.
+During  this compilation process first the source will be parsed into asc and then converted into machine code.
+
+Dynamic --> Javascript is not  strongly typed we don't have mention the type while declaring and initializing the variable. The type will be dynammically given by the javascript engine while executing  the program.
+
+Single threaded --> Single threaded means there will be only one thready in which all our code will executed.
+
+first class functions --> We can pass a function as an argument to other functions
+
+-------------------------------------------------------------
+
+Execution Of Javascript Code:
+Once, the compilation is done the code will get executed. During the execution process a global execution context will be created for the top level code that is the code outside the function.
+Global execution context is basically an environment which have  addictional informations to execute our code.
+
+Once the code inside the global execution context is executed. Then the javascript engine look for function call and for each function call seperate execution context will be created.
+
+When all the execution context are executed, the engine then keep waiting for the call back functions to be called.
+
+/-------------------------------------------------------------
+
+What's inside the execution context?
+
+1. Variable environment:
+--> let, const, var declarations
+--> functions
+--> arguments object
+2. Scope chain
+3. this keyword
+
+This context will be generated right before execution that is during the creation phase of the context.
+
+Arrow functions don't have access to the arguments object as well as the this keyword
+
+/-----------------------------------------------------------
+
+Call Stack:
+The call stack is where the execution context will get stacked on top of each other, to keep track of where we are in the programs execution.
+The execution context on the top of the stack is the one that is currently running. When it finished running it will be removed from the stack and  the execution will go back to the previous execution context
+
+code runs execution context which is inside the call stack
+
+/------------------------------------------------------------
+
+Scoping:
+Global Scope
+Functional Scope
+Block Scope
+
