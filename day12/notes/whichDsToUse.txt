@@ -1,0 +1,69 @@
+// We  have learnt about the built in data structures
+// Like Arrays, Obejects, Maps and Sets.
+
+// Now lets understand which data structure to use at which cases from these four data structures
+
+/*
+Where data can come from?
+1. From the program itself: Data written directly in the source code (eg: status messages)
+2. From the user interface: Data provided by the user or the data written in the DOM (eg: tasks in todo app)
+3. Data can come from the external sources from the web api (eg: recipe objects, to get current whether or we can create our own api to send the data)
+
+// This data will come like a collection
+
+// Where these collections will get stored?
+These collections will be stored  in any data structure.
+As there are four built in data structures in javascript we need to choose between any one of them to store these collection of data in a more efficient way
+
+1. If we want to use simple list of values then we can use arrays and if want those values to be unique then we can go for sets
+
+2. If we want to store the values as key and value pairs then we can go for objects. If we don't want the keys to be bound only to string datatype then we can go for map where the key can be of any datatype. With the key value pairs we can have the ability to describe the values using the keys
+*/
+
+// Lets understand how the data will come fom web API.
+/*
+Getting data from web API has been so common these days and it is one of the major source of getting data
+
+We can use a third party API or we can set up our own API to send data based on the request that is sent to the certain end point
+
+Web API returns data in the JSON format which will be a string and can be converted into javascript object using the JSON.parse() method on the string
+*/
+
+/*
+There are also other build-in data structures in javascript like WeakMap and WeakSet
+
+Some other languages have data structures like Stacks, Queues, Linked lists, Trees and Hash tables which are not built into javascript
+*/
+
+/*
+
+1. Arrays Vs Sets
+
+// Arrays:
+Use when you need to store ordered set of values (might contain duplicates)
+Use when you need to manipulate data
+
+// Sets: 
+Use when you need to work with unique values
+Use when high performance is really  important. As performing operations in sets will be 10 times faster than arrays
+Use to remove the duplicates from the arrays
+
+2. Objects Vs Maps
+
+// Objects:
+More traditional way to store the key and value pairs
+Easier to write and access the values using dot notaion (.) and square brackets ([]).
+dot - to access the values using the property name
+bracket - to access the values by computing the string
+Most developer are got used to use objects for storing key, value pairs. So, they just keep using them
+When you need to include functions
+Use when working with JSON data
+Object can also be converted into map using Object.entries() method and pass in the object into the method
+
+// Maps:
+Better performance as it is faster than objects
+Keys can be of any datatype not just string
+Easier to iterate
+Easy to compute the size
+
+*/
